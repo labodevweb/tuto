@@ -22,7 +22,7 @@ $valider->valider();
 ?>
        
 <legend> Formulaire </legend><br/>
-<form action="index.php" method="post">
+<form action="index.php" method="post">     
 <label> Nom : </label>
 <input type="text" name="first_name"><br/><br/>
 <label> Prénom : </label>
