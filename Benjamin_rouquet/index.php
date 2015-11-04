@@ -20,7 +20,7 @@ include('class.php');
 $valider = new User;
 $valider->valider();
 ?>
-       
+          
 <legend> Formulaire </legend><br/>
 <form action="index.php" method="post">     
 <label> Nom : </label>
