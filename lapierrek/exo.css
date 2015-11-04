@@ -1,0 +1,19 @@
+h1
+{
+	color:red !important;
+	font-size: large;
+	font-family: comic;
+}
+body
+{
+	background-image: url(/images/po.jpg);
+	background-repeat:no-repeat;
+	width: 100%;
+
+}
+.chill
+{
+	color:red !important;
+	font-family: comic;
+	font-size: large;
+}
