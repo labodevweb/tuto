@@ -20,4 +20,21 @@ function connexion(){
 	return $bdd;
 }
 
+/*check if user exist*/
+function checkUser($login, $mail){
+	$ret = false;
+	$bdd = connexion();
+
+    $req = $bdd->prepare('SELECT * from users where Email = ? or Login = ?');
+    $req->execute(array($mail, $login));
+
+    if($req->fetch()) {
+		$ret = true;//exist
+	}
+
+	$req->closeCursor();
+    return $ret;
+}
+
+
 ?>
