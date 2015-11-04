@@ -1,0 +1,127 @@
+body {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.generale{
+	padding:15px;
+
+}
+
+#detail {
+	text-decoration: none;
+	border: 1px solid grey;
+	color: black;
+	background-color: lightgrey;
+}
+
+#detail:hover {
+	background-color: #f6f6f6;
+}
+
+h1, h2 {
+	font-style: bold;
+	color: #32146f;
+	line-height: 1.5;
+}
+
+#table-ip{
+	width: 1000px;
+	border: 1px solid black;   
+	border-collapse: collapse;
+}
+
+#table-ip caption{
+	border: 1px solid silver;
+	padding-bottom: 20px !important;
+	padding: 4px;
+	font-weight: bold;
+	color: #d12b00;
+}
+#table-ip td, #table-ip th{   
+	border: 1px solid silver;
+	padding: 4px;
+	text-align: center;
+	height: 80px;
+}
+#table-ip th
+{	background-color: 
+	#b2b2b2;	
+	color: #ffffff;	
+	height: 20px !important;
+}
+
+#table-ip tr:hover
+{	
+	background-color: #f6f6f6;
+}
+
+ul {
+	display: block;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.txt-insc{
+	display:block;
+}
+
+#area{
+	height: 200px;
+	width: 1000px;
+}
+
+#avatar{
+	width:200px;
+	height:200px;
+	background-size:contain;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.menu {
+	display: inline-block;
+    width: 100%;
+	padding-left: 15px;
+   /* Fallback si dégradé non dispo*/
+    background:#aeadaa;
+	margin:0;
+	position: fixed;
+}
+
+.menu #user {
+	text-align:right;
+	padding-right:30px;
+	
+}
+
+ #contact {
+	padding-left : 20%;
+}
+
+.menu h2 {
+	font-size: 120%;
+	font-family: Kalinga;
+	color: #32146f;
+	line-height: 0;
+
+}
+
+.menu a {
+	display : inline-block;
+}
+
+#mdp {
+	font-size: 100%;
+	color: #32146f;
+	line-height: 0;
+}
+
+#error {
+	color: red;
+}
