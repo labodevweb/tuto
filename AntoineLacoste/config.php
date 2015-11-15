@@ -1,6 +1,6 @@
 <?php
 
-function connect(){
+function connectBDD(){
     $host='localhost';
     $user='root';
     $password='';
@@ -19,4 +19,8 @@ function connect(){
     }
 
     return $bdd;
+}
+
+function connectUser(){
+
 }
