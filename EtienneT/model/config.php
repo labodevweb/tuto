@@ -20,21 +20,16 @@ function connexion(){
 	return $bdd;
 }
 
-/*check if user exist*/
-function checkUser($login, $mail){
-	$ret = false;
-	$bdd = connexion();
+function createTable($pdo){
 
-    $req = $bdd->prepare('SELECT * from users where Email = ? or Login = ?');
-    $req->execute(array($mail, $login));
+	$create = "CREATE TABLE IF NOT EXISTS users (
+		id INT(11) AUTO_INCREMENT PRIMARY KEY,
+		Login VARCHAR(100) NOT NULL, 
+		Pass VARCHAR(150) NOT NULL, 
+		name VARCHAR(100), 
+		Email VARCHAR(100));";
 
-    if($req->fetch()) {
-		$ret = true;//exist
-	}
-
-	$req->closeCursor();
-    return $ret;
+	$res = $pdo->exec($create);
 }
-
 
 ?>
